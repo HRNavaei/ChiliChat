@@ -1,9 +1,13 @@
 # ChiliChat
-A simple messenger with command line GUI, created with pure java using socket programming.
+ChiliChat is a simple messenger application with a command-line GUI, developed using pure Java and employing socket programming within a client/server architecture.
 
-This program is set to work in local-host network.
-For using it, you should first run the server program.
-Then, you can run the client program and use it via its command-line GUI.
-For simplicity, there are three ready to run client programs in Sample Clients folder. You can enter each of folders in it and simply open the Run.bat program to run the client program.
-For having more client programs, you can copy sample clients to any number you want and use them.
-Have fun!
+While primarily designed for local-host network usage, the program can be adapted for broader network functionality by modifying the IP address and port settings in the source code.
+
+To run the program, follow these steps:
+
+1. Open the 'Runnable' folder.
+2. Start the server by executing the 'run.bat' file located in the 'server' folder.
+3. Launch clients from the 'Sample Client' folder.
+If you require additional client instances, you can duplicate the sample clients and run them concurrently.
+
+Feel free to enjoy the capabilities of the ChiliChat!
