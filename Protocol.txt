@@ -1,0 +1,37 @@
+client requests:
+* Make -Option <user:userID> -Option <pass:password>
+* Connect -Option <user:userID> -Option <pass:password>
+* Group -Option <user:userID> -Option <gid:groupID>
+* Users -Option <group:groupID>
+* GM -Option <to:groupID> -Option <message_len:4> -Option <message_body:"salamo alaykom">
+* PM -Option <message_len:5> -Option <to:userID2> -Option <message_body:"salamo alaykom">
+* Leave -Option <id:groupID>
+* End
+* Logoff
+* GroupList
+* PvList
+* Is-Online -Option <user:userID2>
+* CG -Option <gname:groupName> -Option <gid:groupID>
+* Admin -Option <group:groupID>
+------------------------------------------------------------------------------------
+Server responses:
+* User Accepted -Option <id:userID>
+* Connected -Option <user_name:"str"> -Option <SID:#>
+* <userID> join the chat room. (then) Hi <userID>, welcome to the chat room.
+* USERS_LIST:
+  <userID1>|<userID2>|<userID3>|<userID4>
+* PV_LIST:
+  <userID1>|<userID2>|<userID3>|<userID4>
+* GROUP_LIST:
+  <groupID1>|<groupID2>|<groupID3>|<groupID4>
+* Admin -Option <groupName> -Option <adminUserID>
+* GM -Option <from:userID> -Option <to:groupID> -Option <message_len:#> -Option <message_body:”msg”>
+* PM -Option <from:userID> -Option <to:userID> -Option <message_len:#> -Option <message_body:”msg”>
+* <userID> left the chat room.
+* CG -Option <gname:groupName>
+* App-Msg -Option <section:section_name> -Option <msg:"str"> (may have other options)
+* Notification -Option <type:"str"> -Option <user:userID> -Option <group-name:groupID> (may have less options)
+* Group <gname:groupName> created
+* Is-Online -Option <%s> -Option <%d>
+* ERROR -Option <section:section_name> -Option <reason:err #>
+* Warning -Option <reason:wrn #>
