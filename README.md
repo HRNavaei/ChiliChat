@@ -1,5 +1,5 @@
 # ChiliChat
-ChiliChat is a simple messenger application with a command-line GUI, developed using pure Java and employing socket programming within a client/server architecture.
+ChiliChat is a simple messenger application with a command-line user-interface, developed using pure Java and employing socket programming within a client/server architecture.
 
 While primarily designed for local-host network usage, the program can be adapted for broader network functionality by modifying the IP address and port settings in the source code.
 
